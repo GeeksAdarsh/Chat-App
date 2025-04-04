@@ -43,7 +43,7 @@ public class ChatController {
             room.getMessages().add(message);
             roomRepository.save(room);
         } else {
-            throw new RuntimeException("room not found !!");
+            throw new RuntimeException("Sorry :( room not found !!");
         }
 
         return message;
